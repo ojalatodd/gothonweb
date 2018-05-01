@@ -42,6 +42,9 @@ def game():
                 session['room_name'] = planisphere.name_room(next_room)
 
             return redirect(url_for("game"))
+        else: 
+            return redirect(url_for("game"))
+
 
 
 # YOU SHOULD CHANGE THIS IF YOU PUT IT ON THE INTERNET

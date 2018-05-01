@@ -55,3 +55,5 @@ def test_nonexistent_response():
     data = {'action': 'shoot'}
     rv = web.post('/game', follow_redirects=True, data=data)
     assert_in(b"Central Corridor", rv.data) # We should still be in the Central Corridor
+
+#Test a game where the player clicks submit without entering anything
